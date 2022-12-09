@@ -19,14 +19,18 @@
     display: inline-block;
 }
 
+.search,
+.search-result {
+    width: 361px;
+}
+
 .search {
     position: relative;
     display: flex;
     align-items: center;
-    padding: 0 0 0 16px;
+    padding-left: 16px;
     background-color: var(--primary-background-color);
     border-radius: 36px;
-    width: 361px;
     height: 46px;
     border: 1.5px solid transparent;
 
@@ -36,6 +40,7 @@
 }
 
 .search input {
+    flex: 1;
     background-color: transparent;
     padding: 12px 0;
     font-size: 15px;
@@ -86,4 +91,11 @@
     &:active {
         background-color: rgba(22, 24, 35, .06);
     }
+}
+
+.search-title {
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
 }
